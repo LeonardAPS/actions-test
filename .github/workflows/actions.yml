@@ -23,4 +23,4 @@ jobs:
       - name: Run Python Leonard
         env:
           MYSQL_HOST: ${{ secrets.MYSQL_HOST }}
-        run: python main.py
+        run: python src/main.py
