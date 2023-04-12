@@ -3,7 +3,7 @@ import os
 class MysqlConfig():
     @property
     def host(self):
-        return "YAY"
+        return os.environ["MYSQL_HOST"]
     
     @property
     def user(self):
