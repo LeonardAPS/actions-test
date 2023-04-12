@@ -3,7 +3,7 @@ import os
 class MysqlConfig():
     @property
     def host(self):
-        return os.environ["MYSQL_HOST"]
+        return "YAY"
     
     @property
     def user(self):
@@ -16,4 +16,8 @@ class MysqlConfig():
     @property
     def port(self):
         return os.environ["MYSQL_PORT"]
-        
+    
+
+
+
+# os.environ["MYSQL_HOST"]
