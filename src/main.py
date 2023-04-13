@@ -1,4 +1,5 @@
 from sftp_manager import SFTPFileManager
+from conf import SftpConfig
 # from file_manager import FilePathManager,SFTPFileManager
 # from connector import SFTP,PostgresDatabase,CallbiAPI
 # from metadata import Metadata
@@ -8,13 +9,16 @@ from sftp_manager import SFTPFileManager
 
 def main():
     
+    x = SftpConfig()
+    print(x)
+    print(x.host)
     # Example usage:
-    sftp_manager = SFTPFileManager()
-    df = sftp_manager.get_latest_folder_file_information()
-    print(df.head())
+    # sftp_manager = SFTPFileManager()
+    # df = sftp_manager.get_latest_folder_file_information()
+    # print(df.head())
 
-    # Close SFTP connection
-    sftp_manager.close_connection()
+    # # Close SFTP connection
+    # sftp_manager.close_connection()
 
 
 

@@ -1,4 +1,4 @@
-from conf import MysqlConfig,PostgresConfig,CallbiConfig,SftpConfig
+from conf import SftpConfig
 from sqlalchemy import create_engine
 import pysftp
 
