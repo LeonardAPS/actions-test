@@ -9,19 +9,19 @@ from conf import SftpConfig
 
 def main():
     
-    x = SftpConfig()
-    print(x)
-    print("host",x.host)
-    print("user",x.user)
-    print("password",x.password)
-    print("port",x.port)
+    # x = SftpConfig()
+    # print(x)
+    # print("host",x.host)
+    # print("user",x.user)
+    # print("password",x.password)
+    # print("port",x.port)
     # Example usage:
-    # sftp_manager = SFTPFileManager()
-    # df = sftp_manager.get_latest_folder_file_information()
-    # print(df.head())
+    sftp_manager = SFTPFileManager()
+    df = sftp_manager.get_latest_folder_file_information()
+    print(df.head())
 
     # # Close SFTP connection
-    # sftp_manager.close_connection()
+    sftp_manager.close_connection()
 
 
 
