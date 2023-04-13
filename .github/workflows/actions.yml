@@ -31,4 +31,7 @@ jobs:
       - name: Run Python Leonard
         env:
           SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_USER: ${{ secrets.SFTP_USER }}
+          SFTP_PASS: ${{ secrets.SFTP_PASS }}
+          SFTP_PORT: ${{ secrets.SFTP_PORT }}
         run: python src/main.py

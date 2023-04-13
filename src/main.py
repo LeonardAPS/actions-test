@@ -11,7 +11,10 @@ def main():
     
     x = SftpConfig()
     print(x)
-    print(x.host)
+    print("host",x.host)
+    print("user",x.user)
+    print("password",x.password)
+    print("port",x.port)
     # Example usage:
     # sftp_manager = SFTPFileManager()
     # df = sftp_manager.get_latest_folder_file_information()
